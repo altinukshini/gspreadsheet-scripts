@@ -2,13 +2,13 @@
 function onOpen() {
  var ss = SpreadsheetApp.getActive();
  var items = [
-   {name: 'Insert Date', functionName: 'insertTimestamp'}
+   {name: 'Insert Date', functionName: 'insertDate'}
  ];
  ss.addMenu('Custom functions', items);
 }
 
 // Main function to insert date automatically in a cell
-function insertTimestamp() {
+function insertDate() {
  var ss = SpreadsheetApp.getActiveSpreadsheet();
  var cell = ss.getActiveCell();
 
